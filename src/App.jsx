@@ -1,9 +1,10 @@
 import React from 'react'
+import Abstract from './pages/Abstract'
 
 function App() {
 
   return (
-    <h1>Hello World!</h1>
+    <Abstract/>
   )
 }
 
