@@ -1,9 +1,15 @@
 import React from 'react'
-
-function App() {
-
+import './App.css'
+import './index.css'
+import { Routes } from "react-router-dom"
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+const App = () => {
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Navbar />
+      <Footer />
+    </>
   )
 }
 
