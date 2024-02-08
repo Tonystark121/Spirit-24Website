@@ -1,0 +1,27 @@
+#our_partners_container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    height: auto;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    border-radius: 20px;
+}
+#our_partners_heading{
+    height: 190%;
+}
+.our_partners_images{
+    width: 23%;
+}
+#our_partners_images_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
