@@ -11,14 +11,14 @@ import Speakers from "./Pages/Speakers";
 
 const App = () => {
   return (
-    <>
+    <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
       <Home />
       <Navbar />
       <About />
       <Speakers />
       <Event />
       <Footer />
-    </>
+    </div>
   );
 };
 
