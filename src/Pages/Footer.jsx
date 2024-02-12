@@ -3,22 +3,12 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import styles from "./Footer.module.css"
+import styles from "./Footer.module.css";
 const Footer1 = () => {
 	return (
-		<div className={styles.mainContainer}
-			// style={{
-			// 	backgroundColor: "#F2F7F8",
-			// 	height: "240px",
-			// 	borderRadius: "20px",
-			// 	width: "80%",
-			// 	display: "flex",
-			// 	justifyContent: "flex-end",
-			// 	borderBottom: "35px solid #009D9A",
-			// }}
-		>
-			<div style={{ width: "50%", marginLeft: "8%" }}>
-				<div style={{ marginTop: "5%" }}>
+		<div className={styles.mainContainer}>
+			<div className={styles.container1}>
+				<div className={styles.div1a}>
 					<p style={{ color: "#009D9A", fontWeight: "bold" }}>
 						International Conference on
 					</p>
@@ -31,20 +21,12 @@ const Footer1 = () => {
 					>
 						Pharmaceutical Innovations &
 					</h1>
-					<div
-						style={{
-							display: "flex",
-							flexDirection: "row",
-							alignItems: "center",
-							flexWrap: "wrap",
-						}}
-					>
+					<div className={styles.div1b}>
 						<h1
 							style={{
 								fontSize: "20px",
 								fontWeight: "bold",
 								color: "gray",
-							
 							}}
 						>
 							SPIRIT :&nbsp;
@@ -55,14 +37,7 @@ const Footer1 = () => {
 					</div>
 				</div>
 				<div style={{ marginTop: "5%" }}>
-					<div
-						style={{
-							display: "flex",
-							flexDirection: "row",
-							alignItems: "center",
-							flexWrap: "wrap",
-						}}
-					>
+					<div className={styles.div1b}>
 						<h1 style={{ color: "#009D9A", fontSize: "18px" }}>
 							Email us :&nbsp;
 						</h1>
@@ -87,24 +62,18 @@ const Footer1 = () => {
 					</div>
 				</div>
 			</div>
-			<div
-				className={styles.buttondiv}
-			>
-				<button
-					className={styles.button}
-				>
-					Register Now
-				</button>
-				<div style={{ marginTop: "5%" }}>
+			<div className={styles.buttondiv}>
+				<button className={styles.button}>Register Now</button>
+				<div className={styles.atagdiv}>
 					<a
-						style={{ color: "black", cursor: "pointer" }}
+						className={styles.atag}
 						href="https://www.facebook.com/IITBHUSPIRIT/"
 						target="_blank"
 					>
 						<FaFacebookSquare size={30} />
 					</a>
 					<a
-						style={{ color: "black", cursor: "pointer" }}
+						className={styles.atag}
 						href="https://www.instagram.com/spirit.iit.bhu?igsh=bWZnYXpmOXh4MGVx"
 						target="_blank"
 					>
@@ -113,16 +82,16 @@ const Footer1 = () => {
 					<a
 						href="https://twitter.com/Spirit_IIT"
 						target="_blank"
-						style={{ color: "black", cursor: "pointer" }}
+						className={styles.atag}
 					>
 						<RiTwitterXFill size={30} />
 					</a>
 					<a
 						href="https://www.linkedin.com/company/spiritiitbhu/"
 						target="_blank"
-						style={{ color: "black", cursor: "pointer" }}
+						className={styles.atag}
 					>
-						<FaLinkedin size={30} style={{ cursor: "pointer" }} />
+						<FaLinkedin size={30} />
 					</a>
 				</div>
 			</div>
