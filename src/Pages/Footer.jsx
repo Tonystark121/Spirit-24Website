@@ -1,42 +1,102 @@
 import React from "react";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 import styles from "./Footer.module.css";
-import img1 from '../assets/img1.png'
-import img2 from '../assets/img2.png'
-import img3 from '../assets/img3.png'
-import img4 from '../assets/img4.png'
-import img5 from '../assets/img5.png'
-
 const Footer1 = () => {
-  return (
-    <div className={styles.footer}>
-      <div className={styles.leftbox}>
-        <div className={styles.lefttitle}>
-          <h3>International Conference on</h3>
-          <h1>
-            PHARMACEUTICAL INNOVATIONS & SPIRIT: <br /> <span>The Annual Techno-Pharma
-            Conclave</span>
-          </h1>
-        </div>
-        <div className={styles.socials}>
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
-        </div>
-      </div>
-      <div className={styles.rightbox}>
-        <h1>Contact Us</h1>
-        <div>
-          <img src={img1} alt="" />
-          <span><a href="mailto:spirit@iitbhu.ac.in">spirit@iitbhu.ac.in</a></span>
-        </div>
-        <div>
-          <img src={img5} alt="" />
-          <span>+91 1234567890</span>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className={styles.mainContainer}>
+			<div className={styles.container1}>
+				<div className={styles.div1a}>
+					<p style={{ color: "#009D9A", fontWeight: "bold" }}>
+						International Conference on
+					</p>
+					<h1
+						style={{
+							fontSize: "20px",
+							fontWeight: "bold",
+							color: "gray",
+						}}
+					>
+						Pharmaceutical Innovations &
+					</h1>
+					<div className={styles.div1b}>
+						<h1
+							style={{
+								fontSize: "20px",
+								fontWeight: "bold",
+								color: "gray",
+							}}
+						>
+							SPIRIT :&nbsp;
+						</h1>
+						<p style={{ color: "#009D9A", fontWeight: "bold" }}>
+							The Annual Techno-Pharma Conclave
+						</p>
+					</div>
+				</div>
+				<div style={{ marginTop: "5%" }}>
+					<div className={styles.div1b}>
+						<h1 style={{ color: "#009D9A", fontSize: "18px" }}>
+							Email us :&nbsp;
+						</h1>
+						<p style={{ fontSize: "20px", color: "gray", fontWeight: "bold" }}>
+							spirit@itbhu.ac.in
+						</p>
+					</div>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "row",
+							alignItems: "center",
+							flexWrap: "wrap",
+						}}
+					>
+						<h1 style={{ color: "#009D9A", fontSize: "18px" }}>
+							Mobile :&nbsp;
+						</h1>
+						<p style={{ fontSize: "20px", color: "gray", fontWeight: "bold" }}>
+							+91 8319456409
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className={styles.buttondiv}>
+				<button className={styles.button}>Register Now</button>
+				<div className={styles.atagdiv}>
+					<a
+						className={styles.atag}
+						href="https://www.facebook.com/IITBHUSPIRIT/"
+						target="_blank"
+					>
+						<FaFacebookSquare size={30} />
+					</a>
+					<a
+						className={styles.atag}
+						href="https://www.instagram.com/spirit.iit.bhu?igsh=bWZnYXpmOXh4MGVx"
+						target="_blank"
+					>
+						<FaInstagram size={30} />
+					</a>
+					<a
+						href="https://twitter.com/Spirit_IIT"
+						target="_blank"
+						className={styles.atag}
+					>
+						<RiTwitterXFill size={30} />
+					</a>
+					<a
+						href="https://www.linkedin.com/company/spiritiitbhu/"
+						target="_blank"
+						className={styles.atag}
+					>
+						<FaLinkedin size={30} />
+					</a>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Footer1;
