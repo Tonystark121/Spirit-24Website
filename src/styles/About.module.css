@@ -1,7 +1,7 @@
 /** @format */
 
 .page {
-  width: 100%;
+  width: 90%;
   background: var(--secondaryBackground);
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@
   position: relative;
   margin: auto;
   border-radius: 1rem;
-
 }
 
 .cd {
@@ -49,7 +48,7 @@
   display: flex;
   justify-content: space-between;
   height: 65%;
-  /* display: none; */
+
 }
 .leftMain {
   width: 30%;
