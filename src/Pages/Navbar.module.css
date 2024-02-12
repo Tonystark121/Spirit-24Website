@@ -31,3 +31,45 @@
 .button a {
   color: white !important;
 }
+.icons{
+  display: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+.menu{
+   width: 200px;
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   padding: 20px;
+   align-items: flex-start;
+   font-size: 30px !important;
+   position: absolute;
+   right: 40px;
+   top: 70px;
+   border-radius: 5px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   z-index: 10;
+}
+.menu a{
+  padding: 8px 20px ;
+  border-radius: 8px;
+}
+.menu a:hover{
+  background-color: #d6cdcd;
+}
+
+@media screen and (max-width:470px) {
+    .nav{
+      padding: 0 1rem;
+    }
+    .nav_links > a{
+      display: none;
+    }
+    .icons{
+      display: block;
+    }
+    .button {
+       display: none;
+    }
+}
