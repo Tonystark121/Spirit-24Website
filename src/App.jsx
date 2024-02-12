@@ -18,7 +18,6 @@ const App = () => {
       <Speakers />
       <Event />
       <Partner/>
-      <Footer />
     </div>
   );
 };
