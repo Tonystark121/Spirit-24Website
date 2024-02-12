@@ -10,6 +10,7 @@ const Navbar = () => {
   const toggleBtn = () => {
     setIsOpen(prev => !prev)
   }
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.nav}>
@@ -35,7 +36,17 @@ const Navbar = () => {
               className={styles.icons}
             />
           )}
+
         </div>
+        {isOpen && (
+          <div className={styles.menu}>
+            <a href="/">Home</a>
+            <a href="#">Schedule</a>
+            <a href="/contact">Speakers</a>
+            <a href="/contact">Events</a>
+            <a href="/about">Team</a>
+          </div>
+        )}
       </div>
       {isOpen && (
         <div className={styles.menu}>
