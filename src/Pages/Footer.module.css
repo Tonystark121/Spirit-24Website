@@ -52,10 +52,13 @@
 }
 
 .atagdiv{
+  display: flex;
+  gap:0.5rem;
   margin-top: 5%; 
 }
 
 .atag {
+
   color: black;
   cursor: pointer;
 }
