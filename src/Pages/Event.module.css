@@ -1,0 +1,97 @@
+/** @format */
+
+.container {
+  width: 100%;
+  padding: 5rem 0;
+}
+.event {
+  width: 90%;
+  margin: auto;
+  padding: 3%;
+}
+.event h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.poster {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  width: calc(25% - 2rem);
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  background-color: #f2f7f8;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1); */
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  border: 2px solid black;
+  transform: scale(1.05);
+}
+
+.card .gif {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.card .name {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  color: black;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.card .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.card .btn button {
+  color: #ffff !important;
+  background-color: black !important;
+  padding: 2% !important;
+  font-size: medium !important;
+  width: 60% !important;
+  border-radius: 10px !important;
+  border: 2px solid black !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.card .btn button:hover {
+  cursor: pointer;
+  border: 2px solid black !important;
+  background-color: #ffff !important;
+  color: black !important;
+}
+
+@media screen and (max-width: 470px) {
+  .poster {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 80%;
+    margin: auto;
+  }
+}
